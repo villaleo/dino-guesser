@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520E264B2989BF7900FE5C24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520E264A2989BF7900FE5C24 /* DetailViewController.swift */; };
 		52B759F6298328AA00554224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B759F5298328AA00554224 /* AppDelegate.swift */; };
 		52B759F8298328AA00554224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B759F7298328AA00554224 /* SceneDelegate.swift */; };
 		52B759FA298328AA00554224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B759F9298328AA00554224 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		520E264A2989BF7900FE5C24 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		52B759F2298328AA00554224 /* DinoGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B759F5298328AA00554224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52B759F7298328AA00554224 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				52B759FE298328AA00554224 /* Assets.xcassets */,
 				52B75A00298328AA00554224 /* LaunchScreen.storyboard */,
 				52B75A03298328AB00554224 /* Info.plist */,
+				520E264A2989BF7900FE5C24 /* DetailViewController.swift */,
 			);
 			path = DinoGuesser;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				52B759FA298328AA00554224 /* ViewController.swift in Sources */,
 				52B759F6298328AA00554224 /* AppDelegate.swift in Sources */,
 				52B759F8298328AA00554224 /* SceneDelegate.swift in Sources */,
+				520E264B2989BF7900FE5C24 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
