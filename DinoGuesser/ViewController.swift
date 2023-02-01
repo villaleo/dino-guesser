@@ -7,6 +7,13 @@
 
 import UIKit
 
+enum DinosaurName: Int {
+    case Gallimimus = 0
+    case Stegosaurus
+    case TyrannosaurusRex
+    case Brachiosaurus
+}
+
 struct Dinosaur {
     let name: String
     let image: UIImage
@@ -20,8 +27,8 @@ struct Dinosaur {
 }
 
 class ViewController: UIViewController {
-    let dinosaurs: [String: Dinosaur] = [
-        "Gallimimus": Dinosaur(
+    let dinosaurs: [DinosaurName: Dinosaur] = [
+        .Gallimimus: Dinosaur(
             name: "Gallimimus",
             image: UIImage(named: "gallimimus")!,
             type: "ornithomimid",
@@ -32,7 +39,7 @@ class ViewController: UIViewController {
             region: "Mongolia",
             speed: 30
         ),
-        "Stegosaurus": Dinosaur(
+        .Stegosaurus: Dinosaur(
             name: "Stegosaurus",
             image: UIImage(named: "stegosaurus")!,
             type: "stegosaur",
@@ -43,7 +50,7 @@ class ViewController: UIViewController {
             region: "North America",
             speed: 10
         ),
-        "Tyrannosaurus Rex": Dinosaur(
+        .TyrannosaurusRex: Dinosaur(
             name: "Tyrannosaurus Rex",
             image: UIImage(named: "tyrannosaurus")!,
             type: "theropod",
@@ -54,7 +61,7 @@ class ViewController: UIViewController {
             region: "North America",
             speed: 15
         ),
-        "Brachiosaurus": Dinosaur(
+        .Brachiosaurus: Dinosaur(
             name: "Brachiosaurus",
             image: UIImage(named: "brachiosaurus")!,
             type: "sauropod",
@@ -73,26 +80,26 @@ class ViewController: UIViewController {
     
     @IBAction func tappedDinosaur(_ sender: UITapGestureRecognizer) {
         if let component: UIView = sender.view {
-            performSegue(withIdentifier: "detailedView", sender: component)
+            performSegue(withIdentifier: detailViewCtrlSegueName, sender: component)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-        if segue.identifier == "detailedView",
-            let tappedView = sender as? UIView,
-            let detailViewController = segue.destination as? DetailViewController {
-
-            if tappedView.tag == 0 {
-                detailViewController.dinosaur = dinosaurs["Gallimimus"]
-            } else if tappedView.tag == 1 {
-                detailViewController.dinosaur = dinosaurs["Stegosaurus"]
-            } else if tappedView.tag == 2 {
-                detailViewController.dinosaur = dinosaurs["Tyrannosaurus Rex"]
-            } else if tappedView.tag == 3 {
-                detailViewController.dinosaur = dinosaurs["Brachiosaurus"]
-            } else {
-                print("no Dinosaur was tapped, please check your selection.")
+        if segue.identifier == detailViewCtrlSegueName,
+            let component = sender as? UIView,
+            let detailViewCtrl = segue.destination as? DetailViewController {
+            
+            switch component.tag {
+            case DinosaurName.Gallimimus.rawValue:
+                detailViewCtrl.dinosaur = dinosaurs[.Gallimimus]
+            case DinosaurName.Stegosaurus.rawValue:
+                detailViewCtrl.dinosaur = dinosaurs[.Stegosaurus]
+            case DinosaurName.TyrannosaurusRex.rawValue:
+                detailViewCtrl.dinosaur = dinosaurs[.TyrannosaurusRex]
+            case DinosaurName.Brachiosaurus.rawValue:
+                detailViewCtrl.dinosaur = dinosaurs[.Brachiosaurus]
+            default:
+                break
             }
         }
     }
