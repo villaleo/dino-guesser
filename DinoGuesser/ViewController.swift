@@ -76,4 +76,24 @@ class ViewController: UIViewController {
             performSegue(withIdentifier: "detailedView", sender: component)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if segue.identifier == "detailedView",
+            let tappedView = sender as? UIView,
+            let detailViewController = segue.destination as? DetailViewController {
+
+            if tappedView.tag == 0 {
+                detailViewController.dinosaur = dinosaurs["Gallimimus"]
+            } else if tappedView.tag == 1 {
+                detailViewController.dinosaur = dinosaurs["Stegosaurus"]
+            } else if tappedView.tag == 2 {
+                detailViewController.dinosaur = dinosaurs["Tyrannosaurus Rex"]
+            } else if tappedView.tag == 3 {
+                detailViewController.dinosaur = dinosaurs["Brachiosaurus"]
+            } else {
+                print("no Dinosaur was tapped, please check your selection.")
+            }
+        }
+    }
 }

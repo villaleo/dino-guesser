@@ -17,26 +17,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XMQ-Q4-nEC" userLabel="Main VStack">
-                                <rect key="frame" x="16" y="119" width="361" height="683"/>
+                                <rect key="frame" x="16" y="119" width="362" height="386"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ROC-aQ-GZa" userLabel="Top HStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="336.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="188"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjZ-5n-LZh" userLabel="First View">
-                                                <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="336.66666666666669"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="176" height="188"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="OYK-3l-7rb">
-                                                        <rect key="frame" x="16" y="16" width="143.66666666666666" height="304.66666666666669"/>
+                                                        <rect key="frame" x="16" y="16" width="144" height="156"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="gallimimus-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="Hfe-yQ-2H9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="143.66666666666666" height="276.66666666666669"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="128"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="144" id="ElQ-Oz-zLM"/>
                                                                     <constraint firstAttribute="height" constant="128" id="ide-qA-imP"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN2-f9-Haq">
-                                                                <rect key="frame" x="59.333333333333329" y="283.66666666666669" width="25" height="21"/>
+                                                                <rect key="frame" x="59.666666666666671" y="135" width="25" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="21" id="Kc9-df-aAK"/>
                                                                 </constraints>
@@ -59,21 +59,21 @@
                                                     <outletCollection property="gestureRecognizers" destination="YDz-Iu-f5N" appends="YES" id="FuQ-LK-7BA"/>
                                                 </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUh-N7-VED" userLabel="Third View">
-                                                <rect key="frame" x="185.66666666666663" y="0.0" width="175.33333333333337" height="336.66666666666669"/>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUh-N7-VED" userLabel="Third View">
+                                                <rect key="frame" x="186" y="0.0" width="176" height="188"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="m8E-Jg-LHH">
-                                                        <rect key="frame" x="16" y="16" width="143.33333333333334" height="304.66666666666669"/>
+                                                        <rect key="frame" x="16" y="16" width="144" height="156"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="stegosaurus-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="nb9-uU-guL">
-                                                                <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="276.66666666666669"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="128"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="128" id="PRp-O7-NAp"/>
                                                                     <constraint firstAttribute="width" constant="144" id="VPI-wH-x8I"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fU2-ZM-yJg">
-                                                                <rect key="frame" x="59.000000000000028" y="283.66666666666669" width="25" height="21"/>
+                                                                <rect key="frame" x="59.666666666666686" y="135" width="25" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="21" id="iN6-xp-hXo"/>
                                                                 </constraints>
@@ -99,23 +99,23 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YwV-Dq-GYX" userLabel="Bottom HStack">
-                                        <rect key="frame" x="0.0" y="346.66666666666674" width="361" height="336.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="198" width="362" height="188"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vvr-lb-MLr" userLabel="Second View">
-                                                <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="336.33333333333331"/>
+                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vvr-lb-MLr" userLabel="Second View">
+                                                <rect key="frame" x="0.0" y="0.0" width="176" height="188"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="92c-PU-kVb">
-                                                        <rect key="frame" x="16" y="16" width="143.66666666666666" height="304.33333333333331"/>
+                                                        <rect key="frame" x="16" y="16" width="144" height="156"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="tyrannosaurus-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="4Jw-Lq-KMs">
-                                                                <rect key="frame" x="0.0" y="0.0" width="143.66666666666666" height="276.33333333333331"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="128"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="144" id="Ior-S3-Dui"/>
                                                                     <constraint firstAttribute="height" constant="128" id="dzE-IY-HWJ"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOP-gW-mT1">
-                                                                <rect key="frame" x="59.333333333333329" y="283.33333333333331" width="25" height="21"/>
+                                                                <rect key="frame" x="59.666666666666671" y="135" width="25" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="21" id="PL9-Pd-kIN"/>
                                                                 </constraints>
@@ -138,21 +138,21 @@
                                                     <outletCollection property="gestureRecognizers" destination="MEL-h4-ihd" appends="YES" id="tPV-yT-3Mx"/>
                                                 </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWY-cU-gys" userLabel="Fourth View">
-                                                <rect key="frame" x="185.66666666666663" y="0.0" width="175.33333333333337" height="336.33333333333331"/>
+                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWY-cU-gys" userLabel="Fourth View">
+                                                <rect key="frame" x="186" y="0.0" width="176" height="188"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="CCl-5x-Una">
-                                                        <rect key="frame" x="16" y="16" width="143.33333333333334" height="304.33333333333331"/>
+                                                        <rect key="frame" x="16" y="16" width="144" height="156"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="brachiosaurus-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-up-erJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="276.33333333333331"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="128"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="128" id="931-dR-ALv"/>
                                                                     <constraint firstAttribute="width" constant="144" id="U93-Nz-Hyj"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BH0-G5-VOw">
-                                                                <rect key="frame" x="59.000000000000028" y="283.33333333333331" width="25" height="21"/>
+                                                                <rect key="frame" x="59.666666666666686" y="135" width="25" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="21" id="n9T-A0-Feq"/>
                                                                 </constraints>
