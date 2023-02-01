@@ -195,10 +195,26 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mH7-5s-eBZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="YDz-Iu-f5N"/>
-                <tapGestureRecognizer id="ksk-4v-k7l"/>
-                <tapGestureRecognizer id="MEL-h4-ihd"/>
-                <tapGestureRecognizer id="y9e-d2-eby"/>
+                <tapGestureRecognizer id="YDz-Iu-f5N">
+                    <connections>
+                        <action selector="tappedDinosaur:" destination="EMY-uq-1zP" id="fVM-Ox-FYZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ksk-4v-k7l">
+                    <connections>
+                        <action selector="tappedDinosaur:" destination="EMY-uq-1zP" id="EJq-ST-ePa"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="MEL-h4-ihd">
+                    <connections>
+                        <action selector="tappedDinosaur:" destination="EMY-uq-1zP" id="RR2-uf-6UL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="y9e-d2-eby">
+                    <connections>
+                        <action selector="tappedDinosaur:" destination="EMY-uq-1zP" id="6Ha-Gi-EuH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2681.679389312977" y="-126.05633802816902"/>
         </scene>

@@ -70,4 +70,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func tappedDinosaur(_ sender: UITapGestureRecognizer) {
+        if let component: UIView = sender.view {
+            performSegue(withIdentifier: "detailedView", sender: component)
+        }
+    }
 }
