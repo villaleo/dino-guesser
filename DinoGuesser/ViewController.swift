@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         .Gallimimus: Dinosaur(
             name: "Gallimimus",
             image: UIImage(named: "gallimimus")!,
-            type: "ornithomimid",
+            type: "Ornithomimid",
             weight: 450,
             height: 1.9,
             diet: "Omnivore",
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         .Stegosaurus: Dinosaur(
             name: "Stegosaurus",
             image: UIImage(named: "stegosaurus")!,
-            type: "stegosaur",
+            type: "Stegosaur",
             weight: 4990,
             height: 4.0,
             diet: "Herbivore",
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         .TyrannosaurusRex: Dinosaur(
             name: "Tyrannosaurus Rex",
             image: UIImage(named: "tyrannosaurus")!,
-            type: "theropod",
+            type: "Theropod",
             weight: 7030,
             height: 3.6,
             diet: "Carnivore",
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         .Brachiosaurus: Dinosaur(
             name: "Brachiosaurus",
             image: UIImage(named: "brachiosaurus")!,
-            type: "sauropod",
+            type: "Sauropod",
             weight: 60000,
             height: 12.5,
             diet: "Omnivore",
